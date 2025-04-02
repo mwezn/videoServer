@@ -1,0 +1,20 @@
+<html>
+
+
+<body>
+<canvas class="shadow" id="videostream" width="1500" height="900"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+
+
+<label>Pic size</label>
+<input type="file" id="input" src="'./"></input>
+<input id='slider' type='range' min=10 max=1000 step=5 value=500></input>
+<p id='size'></p>
+<label>Crop size</label>
+<input id='crop' type='range' min=0 max=1800 step=1 value=50></input>
+<p id='cropsize'></p>
+<input id='cropw' type='range' min=0 max=1800 step=1 value=100></input>
+<p id='cropsize2'></p>
+</body>
+<script src="./imagedata.js" type="text/javascript"></script>
+</html>

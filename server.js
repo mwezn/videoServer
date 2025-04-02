@@ -63,6 +63,11 @@ app.get('/', (req, res)=> {
     res.sendFile('index.html', { root: __dirname })
 })
 
+app.get('/image', (req, res)=> {
+    //res.setHeader("Content-Type", "text/javascript");
+    res.sendFile('image.html', { root: __dirname })
+})
+
 http.listen(port, () => {
     console.log('listening on localhost:' + port);
 });
